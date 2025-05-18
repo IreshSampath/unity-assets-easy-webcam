@@ -2,41 +2,41 @@ using UnityEngine;
 
 namespace GAG.EasyWebCam
 {
-    public class EasyCamManager : MonoBehaviour
+    public class EasyWebcamManager : MonoBehaviour
     {
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void OnEnable()
         {
-            EasyCamEvents.OnSavePhotoPathCreated += OnReceivedPhotoPath;
+            EasyWebcamEvents.OnSavePhotoPathCreated += OnReceivedPhotoPath;
         }
         void OnDisable()
         {
-            EasyCamEvents.OnSavePhotoPathCreated -= OnReceivedPhotoPath;
+            EasyWebcamEvents.OnSavePhotoPathCreated -= OnReceivedPhotoPath;
         }
 
         public void InitializeCamera()
         {
-            EasyCamEvents.RaiseOnCameraInitialized();
+            EasyWebcamEvents.RaiseOnCameraInitialized();
         }
 
         public void SwitchOnCamera(int cameraIndex)
         {
-            EasyCamEvents.RaiseOnCameraStarted(cameraIndex);
+            EasyWebcamEvents.RaiseOnCameraStarted(cameraIndex);
         }
 
         public void TakePhoto()
         {
-            EasyCamEvents.RaiseOnCameraCaptured();
+            EasyWebcamEvents.RaiseOnCameraCaptured();
         }
 
         public void CreatePreviewUI()
         {
-            EasyCamEvents.RaiseOnPreviewUICreated();
+            EasyWebcamEvents.RaiseOnPreviewUICreated();
         }
 
         public void CaptureAndSavePreview()
         {
-            EasyCamEvents.RaiseOnPreviewCapturedAndSaved();
+            EasyWebcamEvents.RaiseOnPreviewCapturedAndSaved();
         }
 
         public void OnReceivedPhotoPath(string path)

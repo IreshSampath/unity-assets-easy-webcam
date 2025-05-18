@@ -8,7 +8,7 @@ using TMPro;
 
 namespace GAG.EasyWebCam
 {
-    public class EasyCamHandler : MonoBehaviour
+    public class EasyWebcamHandler : MonoBehaviour
     {
         [SerializeField] bool _isAutoProcessing = false;
         [SerializeField] bool _isCountdownEnable = false;
@@ -27,20 +27,20 @@ namespace GAG.EasyWebCam
 
         private void OnEnable()
         {
-            EasyCamEvents.OnCameraInitialized += InitializeCamera;
-            EasyCamEvents.OnCameraStarted += SwitchOnCamera;
-            EasyCamEvents.OnCameraCaptuerd += TakePhoto;
-            EasyCamEvents.OnPreviewUICreated += CreatePreviewUI;
-            EasyCamEvents.OnPreviewCapturedAndSaved += CaptureAndSaveUI;
+            EasyWebcamEvents.OnCameraInitialized += InitializeCamera;
+            EasyWebcamEvents.OnCameraStarted += SwitchOnCamera;
+            EasyWebcamEvents.OnCameraCaptuerd += TakePhoto;
+            EasyWebcamEvents.OnPreviewUICreated += CreatePreviewUI;
+            EasyWebcamEvents.OnPreviewCapturedAndSaved += CaptureAndSaveUI;
         }
 
         private void OnDisable()
         {
-            EasyCamEvents.OnCameraInitialized -= InitializeCamera;
-            EasyCamEvents.OnCameraStarted -= SwitchOnCamera;
-            EasyCamEvents.OnCameraCaptuerd -= TakePhoto;
-            EasyCamEvents.OnPreviewUICreated -= CreatePreviewUI;
-            EasyCamEvents.OnPreviewCapturedAndSaved -= CaptureAndSaveUI;
+            EasyWebcamEvents.OnCameraInitialized -= InitializeCamera;
+            EasyWebcamEvents.OnCameraStarted -= SwitchOnCamera;
+            EasyWebcamEvents.OnCameraCaptuerd -= TakePhoto;
+            EasyWebcamEvents.OnPreviewUICreated -= CreatePreviewUI;
+            EasyWebcamEvents.OnPreviewCapturedAndSaved -= CaptureAndSaveUI;
         }
 
         // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -242,7 +242,7 @@ namespace GAG.EasyWebCam
             File.WriteAllBytes(path, bytes);
 
             Debug.Log("Saved UI capture to: " + path);
-            EasyCamEvents.RaiseOnSavePhotoPathCreated(path);
+            EasyWebcamEvents.RaiseOnSavePhotoPathCreated(path);
         }
 
         // Helper to convert RectTransform to screen pixel Rect

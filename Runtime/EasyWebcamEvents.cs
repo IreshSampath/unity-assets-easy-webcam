@@ -2,7 +2,7 @@ using System;
 
 namespace GAG.EasyWebCam
 {
-    public class EasyCamEvents
+    public class EasyWebcamEvents
     {
         public static event Action OnCameraInitialized;
         public static void RaiseOnCameraInitialized()

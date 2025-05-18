@@ -1,6 +1,6 @@
 ﻿{
   "name": "com.ireshsampath.unity-assets.easy-webcam",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "EasyWebcam",
   "description": "EasyWebcam is a Unity asset designed to simplify webcam functionality within your games. It offers easy integration for accessing and using device cameras.",
   "unity": "6000.1",
