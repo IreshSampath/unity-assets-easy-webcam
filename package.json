@@ -1,0 +1,34 @@
+﻿{
+  "name": "com.ireshsampath.unity-assets.easy-webcam",
+  "version": "1.0.0",
+  "displayName": "EasyWebcam",
+  "description": "EasyWebcam is a Unity asset designed to simplify webcam functionality within your games. It offers easy integration for accessing and using device cameras.",
+  "unity": "6000.1",
+  "unityRelease": "1f1",
+  "documentationUrl": "https://github.com/IreshSampath/unity-assets-easy-webcam/blob/main/README.md",
+  "changelogUrl": "https://example.com/easy-webcam-changelog.html",
+  "licensesUrl": "https://example.com/easy-webcam-licensing.html",
+  "dependencies": {
+    "com.unity.textmeshpro": "5.0.0"
+  },
+  "samples": [
+    {
+      "displayName": "EasyWebcam Sample",
+      "description": "An example scene demonstrating how to integrate and use EasyWebcam for accessing and displaying webcam feeds.",
+      "path": "Samples~/Sample 1"
+    }
+  ],
+  "keywords": [
+    "webcam",
+    "unity webcam",
+    "camera",
+    "easy webcam",
+    "video",
+    "input"
+  ],
+  "author": {
+    "name": "Iresh Sampath",
+    "email": "ireshsampath@gmail.com",
+    "url": "https://ireshsampath.portfoliobox.io/"
+  }
+}
